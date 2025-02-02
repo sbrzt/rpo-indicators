@@ -1,4 +1,4 @@
-# extension-template
+# RPO Indicators
 
-This repository is a blank template of an SKG-IF extension.
+This repository holds the documentation for the extension of the SKG-IF data model to describe indicators for monitoring Research Performing Organisations. 
 

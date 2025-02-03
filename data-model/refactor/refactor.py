@@ -1,11 +1,10 @@
 import yaml
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 
-# Load configuration from YAML file
+# Load mapping file
 with open("mapping.yaml", "r") as f:
     config = yaml.safe_load(f)
 
-# Extract namespace declarations and mapping rules from the configuration
 namespaces = config["namespaces"]
 mapping_rules = config["mapping_rules"]
 
@@ -23,11 +22,11 @@ pro = Namespace(namespaces["new_ns"]["pro"])
 pso = Namespace(namespaces["new_ns"]["pso"])
 skos = Namespace(namespaces["new_ns"]["skos"])
 
-# Load the original .ttl file
+# Load the ABox
 original_abox = Graph()
 original_abox.parse("../development/06_ABox.ttl", format="turtle")
 
-# Create a new RDF graph for the transformed data
+# Create a new RDF graph for the refactored ABox
 refactored_abox = Graph()
 
 # Bind namespaces to prefixes
@@ -44,13 +43,12 @@ refactored_abox.bind("skos", skos)
 
 bnode_map = {}
 
-# Apply mapping rules to transform the RDF graph
+# Apply mapping rules
 for s, p, o in original_abox:
-    # Map subject, predicate, and object if applicable
+
     new_s_uri = mapping_rules.get(str(s), str(s)).replace(old_abox, new_abox)
     new_p_uri = mapping_rules.get(str(p), str(p)).replace(old_abox, new_abox)
     
-    # Handle blank nodes
     if isinstance(s, BNode):
         if s not in bnode_map:
             bnode_map[s] = BNode()
@@ -75,8 +73,7 @@ for s, p, o in original_abox:
         new_o_uri = mapping_rules.get(str(o), str(o)).replace(old_abox, new_abox)
         new_o = URIRef(new_o_uri)
 
-    # Add transformed triple to the new graph
     refactored_abox.add((new_s, new_p, new_o))
 
-# Serialize the transformed graph to a new .ttl file
+# Serialize the refactored ABox to a new .ttl file
 refactored_abox.serialize(destination="ABox.ttl", format="turtle")

@@ -13,6 +13,7 @@ namespaces:
     literal: "http://purl.org/spar/literal/"
     pro: "http://purl.org/spar/pro/"
     pso: "http://purl.org/spar/pso/"
+    scoro: "http://purl.org/spar/scoro/"
     skos: "http://www.w3.org/2004/02/skos/core#"
 
 
@@ -30,7 +31,7 @@ mapping_rules:
   "https://example.org/skg-if/extention/02/schema/isRelatedToRoleInTime": "http://purl.org/spar/pro/isRelatedToRoleInTime"
   "https://example.org/skg-if/extention/02/schema/RoleInTime": "http://purl.org/spar/pro/RoleInTime"
   "https://example.org/skg-if/extention/02/schema/withRole": "http://purl.org/spar/pro/withRole"
-  "https://example.org/skg-if/extention/02/schema/affiliate": "http://purl.org/spar/pro/affiliate"
+  "https://example.org/skg-if/extention/02/schema/affiliate": "http://purl.org/spar/scoro/affiliate"
   "https://example.org/skg-if/extention/02/schema/relatesToOrganization": "http://purl.org/spar/pro/relatesToOrganization"
   "https://example.org/skg-if/extention/02/schema/Role": "http://purl.org/spar/pro/Role"
   "https://example.org/skg-if/extention/02/schema/realization": "http://purl.org/vocab/frbr/core#realization"

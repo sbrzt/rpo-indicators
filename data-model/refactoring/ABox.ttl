@@ -8,6 +8,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pro: <http://purl.org/spar/pro/> .
 @prefix pso: <http://purl.org/spar/pso/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +20,7 @@
     datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://doi.org/10.3390/fi15030095" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:JournalArticle ;
             dcterms:issued "2023-01-01T00:00:00+00:00"^^xsd:dateTime ;
             pso:holdsStatusInTime [ pso:withStatus pso:gold-open-access ] ] .
@@ -31,7 +32,7 @@
         [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://cris.unibo.it/handle/11585/916843" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:JournalArticle ;
             dcterms:issued "2023-01-01T00:00:00+00:00"^^xsd:dateTime ;
             pso:holdsStatusInTime [ pso:withStatus pso:green-open-access ] ] .
@@ -41,7 +42,7 @@
     datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://doi.org/10.5281/zenodo.7626636" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:Expression ;
             dcterms:issued "2023-01-01T00:00:00+00:00"^^xsd:dateTime ] .
 
@@ -50,7 +51,7 @@
     datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://doi.org/10.6092/unibo%2Famsacta%2F7601" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:Expression ;
             dcterms:issued "2022-01-01T00:00:00+00:00"^^xsd:dateTime ] .
 
@@ -59,7 +60,7 @@
     datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://doi.org/10.48550/arxiv.2209.06091" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:Preprint ;
             dcterms:issued "2022-01-01T00:00:00+00:00"^^xsd:dateTime ;
             dcat:accessService [ foaf:name "arXiv" ] ] .
@@ -71,7 +72,7 @@
         [ datacite:usesIdentifierScheme datacite:doi ;
             literal:hasLiteralValue "https://doi.org/10.48550/arxiv.2210.02534" ] ;
     pro:isRelatedToRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/02/university-of-bologna> ;
-            pro:withRole pro:affiliate ] ;
+            pro:withRole scoro:affiliate ] ;
     frbr:realization [ a fabio:Preprint ;
             dcterms:issued "2022-01-01T00:00:00+00:00"^^xsd:dateTime ;
             dcat:accessService [ foaf:name "arXiv" ] ] .

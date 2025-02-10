@@ -153,24 +153,24 @@
 #################################################################
 
 ###  https://example.org/skg-if/extention/02/schema/gold-open-access
-:gold-open-access rdf:type :Type .
+:gold-open-access rdf:type :PublicationStatus .
 
 
 ###  https://example.org/skg-if/extention/02/schema/green-open-access
-:green-open-access rdf:type :Type .
+:green-open-access rdf:type :PublicationStatus .
 
 
 ###  https://example.org/skg-if/extention/02/schema/diamond-open-access
-:diamond-open-access rdf:type :Type .
+:diamond-open-access rdf:type :PublicationStatus .
 
 
 ###  https://example.org/skg-if/extention/02/schema/doi
-:doi rdf:type :Type .
+:doi rdf:type :IdentifierScheme .
 
 
 ###  https://example.org/skg-if/extention/02/schema/ror
-:ror rdf:type :Type .
+:ror rdf:type :IdentifierScheme .
 
 
 ###  https://example.org/skg-if/extention/02/schema/affiliate
-:affiliate rdf:type :Type .
+:affiliate rdf:type :Role .

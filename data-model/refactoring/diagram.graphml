@@ -295,7 +295,7 @@
               <y:Geometry height="20.0" width="20.0" x="69.22853011375615" y="825.3491468429565"/>
               <y:Fill color="#FF99CC" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.792043685913086" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.5601806640625" x="24.0" xml:space="preserve" y="-2.896021842956543">pro:affiliate</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.792043685913086" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.5601806640625" x="24.0" xml:space="preserve" y="-2.896021842956543">scoro:affiliate</y:NodeLabel>
               <y:Shape type="ellipse"/>
             </y:ShapeNode>
           </data>

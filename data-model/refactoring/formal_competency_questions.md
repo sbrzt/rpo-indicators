@@ -24,7 +24,7 @@ WHERE {
     ?article a fabio:Work ;
         dcterms:title ?article_title ;
         datacite:hasIdentifier [ literal:hasLiteralValue ?article_doi ; datacite:usesIdentifierScheme datacite:doi ] ;
-        pro:isRelatedToRoleInTime [ pro:withRole pro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
+        pro:isRelatedToRoleInTime [ pro:withRole scoro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
         frbr:realization [ 
             a ?type ;
             dcterms:issued ?issued_date ;
@@ -73,7 +73,7 @@ WHERE {
     ?dataset a fabio:Dataset ;
         dcterms:title ?dataset_title ;
         datacite:hasIdentifier [ literal:hasLiteralValue ?dataset_doi ; datacite:usesIdentifierScheme datacite:doi ] ;
-        pro:isRelatedToRoleInTime [ pro:withRole pro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
+        pro:isRelatedToRoleInTime [ pro:withRole scoro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
         frbr:realization [ dcterms:issued ?issued_date ] .
     
     :university-of-bologna foaf:name ?org_name ;
@@ -116,7 +116,7 @@ WHERE {
     ?article a fabio:Work ;
         dcterms:title ?article_title ;
         datacite:hasIdentifier [ literal:hasLiteralValue ?article_doi ; datacite:usesIdentifierScheme datacite:doi ] ;
-        pro:isRelatedToRoleInTime [ pro:withRole pro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
+        pro:isRelatedToRoleInTime [ pro:withRole scoro:affiliate ; pro:relatesToOrganization :university-of-bologna ] ;
         frbr:realization [ 
             a ?type ;
             dcterms:issued ?issued_date ;

@@ -20,6 +20,7 @@ frbr = Namespace(namespaces["new_ns"]["frbr"])
 literal = Namespace(namespaces["new_ns"]["literal"])
 pro = Namespace(namespaces["new_ns"]["pro"])
 pso = Namespace(namespaces["new_ns"]["pso"])
+scoro = Namespace(namespaces["new_ns"]["scoro"])
 skos = Namespace(namespaces["new_ns"]["skos"])
 
 # Load the ABox
@@ -39,6 +40,7 @@ refactored_abox.bind("frbr", frbr)
 refactored_abox.bind("literal", literal)
 refactored_abox.bind("pro", pro)
 refactored_abox.bind("pso", pso)
+refactored_abox.bind("scoro", scoro)
 refactored_abox.bind("skos", skos)
 
 bnode_map = {}
